@@ -512,4 +512,36 @@ h6,
     }
 }
 
-/* #home_page_carousel>.carousel-item>img {} */
+/* package carousel imgaes */
+
+
+
+
+#package_carousel>.carousel-item>img {
+    height: 70vh;
+}
+
+@media screen and (max-width: 480px) {
+    #package_carousel>.carousel-item>img {
+        height: 35vh;
+    }
+}
+
+
+@media screen and (min-device-width: 480px) and (max-device-width: 768px) {
+    #package_carousel>.carousel-item>img {
+        height: 50vh;
+    }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 992px) {
+    #package_carousel>.carousel-item>img {
+        height: 65vh;
+    }
+}
+
+
+
+.text-orange{
+    color: #ea580c    ;
+}
