@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CarCoachRentalsIndia</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+    <!-- Favicon -->
+    <link href="Favicon/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+</head>
+
+<!-- about section -->
+<style>
+    @media screen and (max-width: 500px) {}
+
+    .about-section {
+        padding: 10px 14px;
+    }
+
+    .about-text {
+        text-align: left;
+    }
+
+    .about-text h2 {
+        font-weight: bold;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        color: #333;
+    }
+
+    .about-text a {
+        font-weight: bold;
+        font-size: 18px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .about-image img {
+        width: 100%;
+        border-radius: 10px;
+    }
+</style>
+
+<!-- car collection and owl carousel styling -->
+<style>
+    .car-section {
+        text-align: center;
+        padding: 50px 0;
+        background-color: #f8f8f8;
+    }
+
+    .car-section h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .owl-carousel .item {
+        background: #fff;
+        padding: 2px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .owl-carousel .item img {
+        max-width: 100%;
+        /* border-radius: 10px; */
+    }
+
+    .owl-carousel .item h3 {
+        margin-top: 15px;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .owl-carousel .item p {
+        font-size: 1em;
+        color: #555;
+    }
+
+
+    .testimonial-carousel .owl-item img {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+
+<!-- this stylingfor cars -->
+<style>
+    .car-card {
+        /* border: 1px solid #ddd; */
+        /* border-radius: 8px; */
+        overflow: hidden;
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+        background: #fff;
+    }
+
+    .car-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .car-title {
+        background-color: #1c1e32;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    .owl-nav {
+        text-align: center;
+        margin-top: 10px;
+    }
+</style>
+
+<!-- this styling for vans -->
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+    }
+
+    .section-title {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    .section-subtitle {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 30px;
+        font-size: 16px;
+        color: #666;
+    }
+
+    .van-card {
+        display: flex;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #fff;
+    }
+
+    .van-card img {
+        width: 55%;
+        object-fit: cover;
+    }
+
+    @media (max-width: 1200px) {
+        .van-card img {
+            width: 40%;
+            object-fit: cover;
+        }
+    }
+
+    .van-card-content {
+        padding: 20px;
+        flex: 1;
+    }
+
+    .van-card h5 {
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: white;
+    }
+
+    .van-card ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+
+    .van-card ul li {
+        padding: 5px 0;
+        color: #444;
+    }
+
+    .view-btn {
+        background: #1c1e32;
+        border: none;
+        padding: 10px 15px;
+        font-weight: bold;
+        border-radius: 5px;
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+    }
+
+    @media (max-width: 768px) {
+        .van-card {
+            flex-direction: column;
+            margin-bottom: 10%;
+        }
+
+        .van-card img {
+            width: 100%;
+        }
+    }
+</style>
+<!-- this styling for bus sections -->
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+    }
+
+    .bus-container {
+        margin-top: 30px;
+    }
+
+    .bus-card {
+        position: relative;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s;
+    }
+
+    .bus-card:hover {
+        transform: scale(1.05);
+    }
+
+    .bus-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .hero_img img {
+        width: 100%;
+        height: 30rem;
+        object-fit: cover;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+        .hero_img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+    }
+
+    .bus-title {
+        /* position: absolute; */
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .bus-title_main {
+        /* position: absolute; */
+        bottom: 3.8rem;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        font-size: 1rem;
+        text-align: center;
+        font-weight: bolder;
+        /* margin-left: 2.2%;
+        margin-right: 2.2%; */
+    }
+</style>
+
+
+
+
+<!-- this styling for airport section  -->
+
+<style>
+    .airport-section {
+        padding: 60px 0;
+        text-align: center;
+        background-color: #f9f9f9;
+    }
+
+    .airport-section h2 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    .airport-section p {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 40px;
+    }
+
+    .airport-card {
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .airport-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .airport-card .airport-title {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .airport-card:hover {
+        transform: scale(1.05);
+    }
+</style>
+
+
+
+
+
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark py-3 px-lg-5 d-none d-lg-block">
+        <div class="row">
+            <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-body pr-3" href="https://wa.me/9312288985" target="_blank"><i
+                            class="fa fa-phone-alt mr-2"></i>+91
+                        9312288985</a>
+                    <span class="text-body">|</span>
+                    <a class="text-body pr-3 mx-2" href="https://wa.me/9773764427" target="_blank"><i
+                            class="fa fa-phone-alt mr-2"></i>+91
+                        9773764427</a>
+                    <span class="text-body">|</span>
+                    <a class="text-body px-3" href="mailto:yashtourandtravels1@gmail.com"><i
+                            class="fa fa-envelope mr-2"></i>yashtourandtravels1@gmail.com</a>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-body px-3" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-body px-3" href="https://twitter.com/">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-body px-3" href="https://linkedin.com/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-body px-3" href="https://instagram.com/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-body pl-3" href="https://youtube.com/">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0 ">
+        <div class="position-relative px-lg-5" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg  navbar-dark py-3 py-lg-0 pl-3 pl-lg-5 navbar_inner">
+                <a href="/" class="navbar-brand">
+                    <h1 class="text-uppercase text-black  mb-1">Yash Tour & Travels</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="/" class="nav-item nav-link active car-link fw-bolder">Home</a>
+                        <a href="About.html" class="nav-item nav-link active car-link fw-bolder">About</a>
+
+                        <div class="nav-item dropdown">
+
+                            <a href="" class="nav-link active dropdown-toggle text-md-white text-sm-white   car-link "
+                                data-toggle="dropdown">Car</a>
+
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <!-- <a href="#" class="dropdown-item">Luxury Cars Fleet</a> -->
+                                <a href="BudgetCarsFleet.html" class="dropdown-item">Budget Cars Fleet</a>
+                                <a href="SuvCarsFleet.html" class="dropdown-item">SUV Vehicle Fleet</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="" class="nav-link active dropdown-toggle text-md-white text-sm-white car-link "
+                                data-toggle="dropdown">Minivan</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="" class="dropdown-item">Minivan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="" class="nav-link active dropdown-toggle" data-toggle="dropdown">Tour Packages</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="Tour-Packages.html" class="dropdown-item">Packages</a>
+                        </div>
+                    </div>
+                    <a href="ContactUs.html" class="nav-item nav-link active">Contact Us</a>
+
+                </div>
+        </div>
+        </nav>
+    </div>
+    </div>
+    <!-- Navbar End -->
+
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-sm-3 mb-sm-0">
+        <div id="header-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" id="home_page_carousel">
+
+                <div class="carousel-item active">
+                    <img class="w-100    " src="IMG/home-page/india-gate.webp" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3"> Book Your Tour Today</h4>
+                            <h1 class="display-1 text-white mb-md-4"
+                                style="background-color: rgba(0, 0, 0, 0.5); /* Light black background */">Discover
+                                India’s Hidden Gems </h1>
+                            <!-- <a href="BudgetCarsFleet.html" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Now</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img class="w-100" src="IMG/home-page/Hawa-mahal.webp" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3">Explore with Us</h4>
+                            <h1 class="display-1 text-white mb-md-4"
+                                style="background-color: rgba(0, 0, 0, 0.5); /* Light black background */">Unforgettable
+                                Journeys Await</h1>
+                            <!-- <a href="BudgetCarsFleet.html" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Now</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img class="w-100" src="IMG/home-page/manali.webp" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3"> Explore India’s Beauty</h4>
+                            <h1 class="display-1 text-white mb-md-4"
+                                style="background-color: rgba(0, 0, 0, 0.5); /* Light black background */">From Hills to
+                                Beaches </h1>
+                            <!-- <a href="BudgetCarsFleet.html" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Now</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="IMG/Home-Caraousel/2.png" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3">Plan Your Tour</h4>
+                            <h1 class="display-1 text-white mb-md-4"
+                                style="background-color: rgba(0, 0, 0, 0.5); /* Light black background */">A Tour With
+                                Great Facilities</h1>
+                            <!-- <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Now</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100"
+                        src="IMG/home-page/Kashmir.webp"
+                        alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3">Let’s Travel</h4>
+                            <h1 class="display-1 text-white mb-md-4"
+                                style="background-color: rgba(0, 0, 0, 0.5); /* Light black background */">Scenic
+                                Getaways & Cultural Wonders</h1>
+                            <!-- <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Now</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img class="w-100" src="IMG/Home-Caraousel/1.png" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3">Rent A Car</h4>
+                            <h1 class="display-1 text-white mb-md-4"
+                                style="background-color: rgba(0, 0, 0, 0.5); /* Light black background */">Best Rental
+                                Cars In Your Location</h1>
+                            <!-- <a href="BudgetCarsFleet.html" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Now</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="IMG/Home-Caraousel/4.png" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3">Rent A Minivan</h4>
+                            <h1 class="display-1 text-white mb-md-4"
+                                style="background-color: rgba(0, 0, 0, 0.5); /* Light black background */">Comfort With
+                                Your Whole Family</h1>
+                            <!-- <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Now</a> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="carousel-item">
+                    <img class="w-100" src="IMG/Home-Caraousel/3.png" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3">Rent A SUV Car</h4>
+                            <h1 class="display-1 text-white mb-md-4"
+                                style="background-color: rgba(0, 0, 0, 0.5); /* Light black background */">Quality Cars
+                                With Quality Driver's</h1>
+                            <a href="SuvCarsFleet.html" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Now</a>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+            <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+                <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-prev-icon mb-n2"></span>
+                </div>
+            </a>
+            <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+                <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-next-icon mb-n2"></span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+
+    <!----------------------------------------------------- Made by Ashish--------------------------------------------------->
+
+
+            <!-- About Us section With Car carousels -->
+    <!-- <div class="container about-section">
+        <div class="row align-items-center  flex-column-reverse flex-md-row">
+            <div class="col-md-12  about-text">
+                <h2 class="my-4 text-center text-lg-left text-decoration-underline" style="text-decoration: underline;">
+                    Welcome to CarCoachRentalsIndia</h2>
+                <p class="text-justify">
+                    Car Coach Rental India offers reliable, comfortable, and affordable travel solutions across India.
+                    With a diverse fleet of well-maintained vehicles, from sedans to buses, we ensure a seamless journey
+                    for solo travelers and groups alike. Our personalized tour packages cover iconic destinations like
+                    the Taj Mahal, Varanasi, and the Himalayas, creating unforgettable travel experiences.
+                    Beyond rentals, we provide 24/7 customer support and experienced drivers who double as guides,
+                    enhancing your journey with local insights. Committed to sustainability, we promote eco-friendly
+                    practices while ensuring transparent pricing and hassle-free bookings. Choose us as your trusted
+                    travel partner and embark on a journey filled with memories, adventure, and discovery.
+                </p>
+                
+            </div>
+            
+        </div>
+    </div> -->
+
+
+    <!-- <div class="container">
+        <div class="owl-carousel owl-theme">
+            <a href="maruti-swiftt-dzire.html" style="text-decoration: none;">
+                <div class="car-card">
+                    <img src="IMG/Cards/5.png" alt="Toyota Vellfire">
+                    <div class="car-title">Maruti Swift Dzire</div>
+                </div>
+            </a>
+            <a href="maruti-swiftt-dzire.html" style="text-decoration: none;">
+                <div class="car-card">
+                    <img src="IMG/Cards/2.png" alt="Mercedes V Class">
+                    <div class="car-title">Maruti Eeco</div>
+                </div>
+            </a>
+            <a href="maruti-swiftt-dzire.html" style="text-decoration: none;">
+                <div class="car-card">
+                    <img src="IMG/Cards/4.png" alt="Kia Carnival Limousine">
+                    <div class="car-title">Toyota Etios</div>
+                </div>
+            </a>
+            <a class="" href="maruti-swiftt-dzire.html" style="text-decoration: none;">
+                <div class="car-card">
+                    <img src="IMG/Page-Caraousel/ERTIGA/1.jpg" alt="Toyota Hiace">
+                    <div class="car-title">Maruti Ertiga</div>
+                </div>
+            </a>
+            <a href="maruti-swiftt-dzire.html" style="text-decoration: none;">
+                <div class="car-card">
+                    <img src="IMG/Page-Caraousel/INNOVA/1.png" alt="Toyota Hiace">
+                    <div class="car-title">Toyota innova crysta</div>
+                </div>
+            </a>
+        </div>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+            <!-- Luxury Cars Section -->
+    <!-- <div class="container  " style="margin-top: 10%;">
+        <h2 class="section-title"> LUXURY VANS</h2>
+        <p class="section-subtitle">
+            Being bigger than a common car, a luxury van can be used to transport a group of tourists traveling
+            together,
+            for institutional or business purposes, or just to carry you and your friends or family on a long journey.
+        </p>
+
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <div class="van-card">
+                    <img src="https://www.indiancarrental.com/uploads/carrent/1696587143.PNG" alt="Luxury Van">
+                    <div class="van-card-content">
+                        <h5 class=" text-dark">IMPORTED VANS FOR VIP</h5>
+                        <ul>
+                            <li>✔ Toyota Vellfire Executive </li>
+                            <li>✔ Mercedes Benz V Class</li>
+                            <li>✔ Toyota Hiace Imported Van</li>
+                            <li>✔ Toyota Commuter Van</li>
+                            <li>✔ Mercedes Sprinter</li>
+                        </ul>
+                        <a href="Toyota-Vellfire.html" class="view-btn text-white">VIEW DETAIL →</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="van-card">
+                    <img src="https://www.indiancarrental.com/uploads/carrent/1696851392.jpg"
+                        alt="Super Luxury Minivans">
+                    <div class="van-card-content">
+                        <h5 class=" text-dark">SUPER LUXURY MINIVANS</h5>
+                        <ul>
+                            <li>✔ Toyota Hiace</li>
+                            <li>✔ Toyota Commuter</li>
+                            <li>✔ Toyota Coaster</li>
+                            <li>✔ Mercedes Sprinter</li>
+                            <li>✔ Force Urbania</li>
+                        </ul>
+                        <a href="Toyota-Vellfire.html" class="view-btn">VIEW DETAIL →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="van-card">
+                    <img src="https://www.indiancarrental.com/uploads/carrent/1696857924.jpg" alt="Luxury Van">
+                    <div class="van-card-content">
+                        <h5 class=" text-dark">IMPORTED VANS FOR VIP</h5>
+                        <ul>
+                            <li>✔ Toyota Vellfire Executive </li>
+                            <li>✔ Mercedes Benz V Class</li>
+                            <li>✔ Toyota Hiace Imported Van</li>
+                            <li>✔ Toyota Commuter Van</li>
+                            <li>✔ Mercedes Sprinter</li>
+                        </ul>
+                        <a href="Toyota-Vellfire.html" class="view-btn">VIEW DETAIL →</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="van-card">
+                    <img src="https://www.indiancarrental.com/uploads/carrent/1696838565.PNG"
+                        alt="Super Luxury Minivans">
+                    <div class="van-card-content">
+                        <h5 class=" text-dark">SUPER LUXURY MINIVANS</h5>
+                        <ul>
+                            <li>✔ Toyota Hiace</li>
+                            <li>✔ Toyota Commuter</li>
+                            <li>✔ Toyota Coaster</li>
+                            <li>✔ Mercedes Sprinter</li>
+                            <li>✔ Force Urbania</li>
+                        </ul>
+                        <a href="Toyota-Vellfire.html" class="view-btn">VIEW DETAIL →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+                <!-- Bus Section -->
+    <!-- <div class="container bus-container " style="margin-top: 10%;">
+        <h2 class="fw-bold text-center">ONLINE BUS BOOKING</h2>
+        <p class="text-center">Book the Best Value luxury Bus & Coach rental service across India for tours, events, and
+            more.</p>
+
+        <div class="row g-3">
+            <div class="col-lg-6">
+                <a href="volvo-bus.html" style="text-decoration: none;">
+                    <div class="hero_img" data-bs-toggle="tooltip" title="View Details">
+                        <img src="https://www.indiancarrental.com/uploads/carrent/32424_1696941040.jpg" alt="Volvo Bus">
+                        <div class="bus-title_main text-white">VOLVO BUSES</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-1 mt-md-4">
+                <div class="row g-3 " style="margin-bottom: 5%;">
+                    <div class="col-md-6 col-sm-6" style="margin-bottom: 5%;">
+                        <a class="" href="volvo-bus.html" style="text-decoration: none;">
+                            <div class="bus-card" data-bs-toggle="tooltip" title="View Details">
+                                <img src="https://www.indiancarrental.com/uploads/carrent/1697033425.jpg"
+                                    alt="Mercedes Benz">
+                                <div class="bus-title">MERCEDES BENZ BUSES</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 " style="margin-bottom: 5%;">
+                        <a class="" href="volvo-bus.html" style="text-decoration: none;">
+
+                            <div class="bus-card" data-bs-toggle="tooltip" title="View Details">
+                                <img src="https://www.indiancarrental.com/uploads/carrent/1697033179.jpg"
+                                    alt="Luxury Coaches">
+                                <div class="bus-title">LARGE SIZE LUXURY COACHES</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6" style="margin-bottom: 5%;">
+                        <a class="" href="volvo-bus.html" style="text-decoration: none;">
+
+                            <div class="bus-card" data-bs-toggle="tooltip" title="View Details">
+                                <img src="https://www.indiancarrental.com/uploads/carrent/1697033653.JPG"
+                                    alt="Mini Bus">
+                                <div class="bus-title">MINI BUSES</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6" style="margin-bottom: 5%;">
+                        <a class="" href="volvo-bus.html" style="text-decoration: none;">
+
+                            <div class="bus-card" data-bs-toggle="tooltip" title="View Details">
+                                <img src="https://www.indiancarrental.com/uploads/carrent/1697033425.jpg"
+                                    alt="Toyota Mini Bus">
+                                <div class="bus-title">TOYOTA MINI BUS</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+
+             <!-- Airport Section Section -->
+    <!-- <div class="container airport-section">
+        <h2>AIRPORT TRANSFERS</h2>
+        <p>Reliable and comfortable airport transfer services across India. Choose from a variety of premium vehicles
+            for a seamless journey.</p>
+        <div class="container">
+            <div class="owl-carousel owl-theme">
+                <a href="delhi-aiport-transfer.html" style="text-decoration: none;">
+                    <div class="car-card">
+                        <img src="IMG/Cards/5.png" alt="Toyota Vellfire">
+                        <div class="car-title">Delhi Airport Transfer</div>
+                    </div>
+                </a>
+                <a href="delhi-aiport-transfer.html" style="text-decoration: none;">
+                    <div class="car-card">
+                        <img src="IMG/Cards/2.png" alt="Mercedes V Class">
+                        <div class="car-title">Mumbai Airport transfer</div>
+                    </div>
+                </a>
+                <a href="delhi-aiport-transfer.html" style="text-decoration: none;">
+                    <div class="car-card">
+                        <img src="IMG/Cards/4.png" alt="Kia Carnival Limousine">
+                        <div class="car-title">Goa Airprt Transfer</div>
+                    </div>
+                </a>
+                <a class="" href="delhi-aiport-transfer.html" style="text-decoration: none;">
+                    <div class="car-card">
+                        <img src="IMG/Page-Caraousel/ERTIGA/1.jpg" alt="Toyota Hiace">
+                        <div class="car-title">Banglore Airport Transfer</div>
+                    </div>
+                </a>
+                <a href="delhi-aiport-transfer.html" style="text-decoration: none;">
+                    <div class="car-card">
+                        <img src="IMG/Page-Caraousel/INNOVA/1.png" alt="Toyota Hiace">
+                        <div class="car-title">Rajshthan Mumbai Transfer</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div> -->
+
+
+
+
+           <!-- Packages Section Start -->
+<div class="text-center my-5" id="Packages">
+    <p class="text-warning font-weight-bold text-uppercase">SPECIAL PACKAGES</p>
+    <h2 class="text-primary font-weight-bold mt-2">SPECIAL TOUR PACKAGES</h2>
+    <div class="mx-auto mt-2" style="width: 80px; height: 4px; background-color: orange;"></div>
+</div>
+
+    <section class="car-section">
+        <!-- <h2>Our Tour Packages </h2> -->
+        <div class="container">
+            <div class="owl-carousel testimonial-carousel">
+                <a href="GoldenTraingle.html" style="text-decoration: none;">
+                    <div class="item">
+                        <div class="car-card">
+                            <img src="/IMG/Cards/delhi jaipur agra.webp" style="height: 17rem;" alt="Red Car">
+                            <div class="car-info">
+                                <h3> Golden Triangle Tour</h3>
+                                <!-- <p>This red car is built for speed and style.</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="GoldenTraingle.html" style="text-decoration: none;">
+                    <div class="item">
+                        <div class="car-card">
+                            <img src="/IMG/Cards/2-days-delhi-agra-tour-package.webp" style="height: 17rem;"
+                                alt="Blue Car">
+                            <div class="car-info">
+                                <h3>Delhi Agra Tour</h3>
+                                <!-- <p>Power and elegance wrapped in a blue exterior.</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="GoldenTraingle.html" style="text-decoration: none;">
+                    <div class="item">
+                        <div class="car-card">
+                            <img src="/IMG/Cards/Rajasthan-11.webp" style="height: 17rem;" alt="Black Car">
+                            <div class="car-info">
+                                <h3>Rajasthan Tour</h3>
+                                <!-- <div class="d-flex " style="justify-content: space-evenly;">
+                          <h6> <i class="bi bi-geo-alt"></i>Delhi–Agra–Jaipur– Pushkar–Udaipur –Jodhpur via Ranakpur – Jaisalmer – Bikaner – Mandawa – Delhi</h6>
+                        <h6 class="text-dark "> <strong><i class="bi bi-clock"></i>  13D/2D
+                        </strong></h6>
+                      </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- <div class="item">
+                  <div class="car-card">
+                    <img src="https://www.minivanhiredelhi.com/uploads/93346_1Tempo%20Traveler%20Van.jpg" alt="Sports Car">
+                    <div class="car-info">
+                      <h3>Sports Car</h3>
+                      <p>Experience high-performance driving with our sports car.</p>
+                    </div>
+                  </div>
+                </div> -->
+            </div>
+        </div>
+        <!-- <a href="Tour-Packages.html"><button class="text-center view_all_btn">View All...</button>
+        </a> -->
+
+    </section>
+
+
+ 
+
+
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <h1 class="display-1 text-primary text-center">01</h1>
+            <h1 class="display-5 text-uppercase text-center mb-5">Welcome To <span
+                    class="text-primary">Yash Tour & Travels                </span></h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <img class="w-75 mb-4" src="" alt="">
+
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4"
+                            style="width: 100px; height: 100px;">
+                            <i class="fa fa-2x fa-headset text-secondary"></i>
+                        </div>
+                        <h4 class="text-uppercase m-0">24/7 Car Rental Support</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4"
+                            style="width: 100px; height: 100px;">
+                            <i class="fa fa-2x fa-car text-secondary"></i>
+                        </div>
+                        <h4 class="text-uppercase m-0">Car Reservation Anytime</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4"
+                            style="width: 100px; height: 100px;">
+                            <i class="fa fa-2x fa-map-marker-alt text-secondary"></i>
+                        </div>
+                        <h4 class="text-uppercase m-0">Lots Of Pickup Locations</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+
+
+    <!-- Services Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <h1 class="display-1 text-primary text-center">02</h1>
+            <h1 class="display-4 text-uppercase text-center mb-5">Our Services</h1>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                                style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x fa-taxi text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">01</h1>
+                        </div>
+                        <h4 class="text-uppercase mb-3">Car Rental</h4>
+                        <p class="m-0">"Explore new horizons with our car rentals—convenience, comfort, and freedom on
+                            every journey." 🚗✨</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                                style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x fas fa-shuttle-van text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">02</h1>
+                        </div>
+                        <h4 class="text-uppercase mb-3">Van</h4>
+                        <p class="m-0">"Journey together with ease—our vans offer spacious, safe, and stylish group
+                            travel experiences." 🚌💼</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <a href="Tour-Packages.html" style="text-decoration: none;">
+                        <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                                    style="width: 80px; height: 80px;">
+                                    <i class="fa fa-2x fas fa-globe-asia text-secondary"></i>
+                                </div>
+                                <h1 class="display-2 text-white mt-n2 m-0">03</h1>
+                            </div>
+                            <h4 class="text-uppercase mb-3">Tour Packages</h4>
+                            <p class="m-0">"Unveil the world's wonders with our curated tour packages—adventure,
+                                relaxation,
+                                and memories await." 🌍✨</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x fa-cogs text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">04</h1>
+                        </div>
+                        <h4 class="text-uppercase mb-3">Auto Repairing</h4>
+                        <p class="m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique dolore nobis error dignissimos quas sint.</p>
+                    </div>
+                </div> -->
+                <!-- <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x fa-spray-can text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">05</h1>
+                        </div>
+                        <h4 class="text-uppercase mb-3">Auto Painting</h4>
+                        <p class="m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique dolore nobis error dignissimos quas sint.</p>
+                    </div>
+                </div> -->
+                <!-- <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x fa-pump-soap text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">06</h1>
+                        </div>
+                        <h4 class="text-uppercase mb-3">Auto Cleaning</h4>
+                        <p class="m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique dolore nobis error dignissimos quas sint.</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+    <!-- Banner Start -->
+    <!-- <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="bg-banner py-5 px-4 text-center">
+                <div class="py-5">
+                    <h1 class="display-1 text-uppercase text-primary mb-4">50% OFF</h1>
+                    <h1 class="text-uppercase text-light mb-4">Special Offer For New Members</h1>
+                    <p class="mb-4">Only for Sunday from 1st Jan to 30th Jan 2045</p>
+                    <a class="btn btn-primary mt-2 py-3 px-5" href="">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Banner End -->
+
+
+    <!-- Rent A Car Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <h1 class="display-1 text-primary text-center">03</h1>
+            <h1 class="display-4 text-uppercase text-center mb-5">Take A Look At Our Fleet</h1>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 mb-2">
+                    <div class="rent-item mb-2">
+                        <img class="img-fluid mb-2" src="IMG/Cards/5.png" alt="">
+                        <h4 class="text-uppercase mb-3">MARUTI SWIFT DZIRE</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>₹15 Per KM</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary px-2" href="Maruti-Swift-Dzire.html">Book Now!</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-2">
+                    <div class="rent-item mb-2">
+                        <img class="img-fluid mb-2" src="IMG/Cards/4.png" alt="">
+                        <h4 class="text-uppercase mb-3">Toyota Etios</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>₹15 Per KM</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary px-2" href="Toyota-Etios.html">Book Now!</a>
+                    </div>
+                    <a href="BudgetCarsFleet.html" class="VM d-flex justify-content-end">>>></a>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-2">
+                    <div class="rent-item mb-2">
+                        <img class="img-fluid mb-2" src="IMG/Cards/3.png" alt="">
+                        <h4 class="text-uppercase mb-3">Maruti Ertiga</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>₹17 Per KM</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary px-2" href="Maruti-Ertiga.html">Book Now!</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-2">
+                    <div class="rent-item mb-2">
+                        <img class="img-fluid mb-2" src="IMG/Cards/1.png" alt="">
+                        <h4 class="text-uppercase mb-3">Toyota Innova Crysta</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>₹20 Per KM</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary px-2" href="Toyota-innova-crysta.html">Book Now!</a>
+                    </div>
+                    <a href="SuvCarsFleet.html" class="VM d-flex justify-content-end">>>></a>
+                </div>
+                <!-- <div class="col-lg-6 col-md-6 mb-2">
+                    <div class="rent-item mb-2">
+                        <img class="img-fluid mb-2" src="IMG/Etios.jpeg" alt="">
+                        <h4 class="text-uppercase mb-3">Toyota Etios</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>₹20 Per KM</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary px-2" href="QueryForm1.html">Book Now!</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-2">
+                    <div class="rent-item mb-2">
+                        <img class="img-fluid mb-2" src="IMG/Etios.jpeg" alt="">
+                        <h4 class="text-uppercase mb-3">Toyota Etios</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>₹15 Per KM</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary px-2" href="QueryForm1.html">Rent It!</a>
+                    </div>
+                    <a href="" class="VM d-flex justify-content-end">>>></a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Rent A Car End -->
+
+
+    <!-- Team Start -->
+    <!-- <div class="container-fluid py-5">
+            <div class="container py-5">
+                <h1 class="display-1 text-primary text-center">03</h1>
+                <h1 class="display-4 text-uppercase text-center mb-5">Online Car Coach Booking</h1>
+                <p style="text-align: center;">"Book your ideal car coach with ease. Experience luxury, comfort, and reliability for every trip. Your perfect travel companion awaits." 🚗✨</p>
+                <br>
+                <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
+                    <div class="team-item">
+                        <img class="img-fluid w-100" src="img/Audi A4.jpg" alt="">
+                        <div class="position-relative py-4">
+                            <h4 class="text-uppercase">Luxury Car</h4>
+                            <p class="m-0">Details</p>
+                        </div>
+                    </div>
+                    <div class="team-item">
+                        <img class="img-fluid w-100" src="img/20230210032948_WhatsApp_Image_2023_02_10_at_1.png" alt="">
+                        <div class="position-relative py-4">
+                            <h4 class="text-uppercase">Budget Car</h4>
+                            <p class="m-0">Details</p>
+                        </div>
+                    </div>
+                    <div class="team-item">
+                        <img class="img-fluid w-100" src="img/about.jpg.jpg" alt="">
+                        <div class="position-relative py-4">
+                            <h4 class="text-uppercase">Minivan</h4>
+                            <p class="m-0">Details</p>
+                        </div>
+                    </div> -->
+    <!-- <div class="team-item">
+                    <img class="img-fluid w-100" src="img/bus.jpg" alt="">
+                    <div class="position-relative py-4">
+                        <h4 class="text-uppercase">Volvo Bus</h4>
+                        <p class="m-0">Details</p>
+                    </div>
+                </div> -->
+    <!-- </div>
+        </div>
+    </div> -->
+    <!-- Team End -->
+
+
+    <!-- Banner Start -->
+    <!-- <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row mx-0">
+                <div class="col-lg-6 px-0">
+                    <div class="px-5 bg-secondary d-flex align-items-center justify-content-between" style="height: 350px;">
+                        <img class="img-fluid flex-shrink-0 ml-n5 w-50 mr-4" src="img/banner-left.png" alt="">
+                        <div class="text-right">
+                            <h3 class="text-uppercase text-light mb-3">Want to be driver?</h3>
+                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, vel.</p>
+                            <a class="btn btn-primary py-2 px-4" href="">Start Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-0">
+                    <div class="px-5 bg-dark d-flex align-items-center justify-content-between" style="height: 350px;">
+                        <div class="text-left">
+                            <h3 class="text-uppercase text-light mb-3">Looking for a car?</h3>
+                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, illo!</p>
+                            <a class="btn btn-primary py-2 px-4" href="">Start Now</a>
+                        </div>
+                        <img class="img-fluid flex-shrink-0 mr-n5 w-50 ml-4" src="img/banner-right.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Banner End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <h1 class="display-1 text-primary text-center">04</h1>
+            <h1 class="display-4 text-uppercase text-center mb-5">Our Client's Say</h1>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <!-- <img class="img-fluid ml-n4" src="img/Girl1.jpg" alt=""> -->
+                        <h1 class="display-2  m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Priya Sharma</h4>
+                    <p class="m-0"> "Booking a car coach through CarCoachRental India was the best decision I made for
+                        my trip! The vehicle was clean, comfortable, and the driver was incredibly knowledgeable about
+                        the local areas. Highly recommend!"</p>
+                </div>
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <h1 class="display-2  m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Rajesh Singh</h4>
+                    <p class="m-0">"I recently used CarCoachRental India for a group tour, and I was thoroughly
+                        impressed! The coach was spacious, well-maintained, and our driver was courteous and punctual.
+                        Will definitely use their services again!"</p>
+                </div>
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <!-- <img class="img-fluid ml-n4" src="img/Women.jpg" alt=""> -->
+                        <h1 class="display-2  m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Anjali Patel</h4>
+                    <p class="m-0">"Thanks to CarCoachRental India, our family vacation was a breeze! The booking
+                        process was seamless, and the vehicle provided exceeded our expectations. Safe and reliable
+                        transportation throughout our trip!"</p>
+                </div>
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <!-- <img class="img-fluid ml-n4" src="img/Boy2.jpg" alt=""> -->
+                        <h1 class="display-2  m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Sanjay Verma</h4>
+                    <p class="m-0">"I had a fantastic experience with CarCoachRental India. The coach was comfortable,
+                        the driver was professional, and the service was top-notch. Made exploring India hassle-free and
+                        enjoyable!"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <h1 class="display-1 text-primary text-center">05</h1>
+            <h1 class="display-4 text-uppercase text-center mb-5">Contact Us</h1>
+            <div class="row">
+                <div class="col-lg-7 mb-2">
+                    <div class="contact-form bg-light mb-4" style="padding: 30px;">
+
+                        <form id="myForm">
+                            <div class="row">
+                                <div class="col-6 form-group">
+                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
+                                        required>
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control p-4" id="mobile" placeholder="Your Mobile Number"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                    required></textarea>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="services">Services</label>
+                                <select class="form-control" id="services">
+                                    <option>Select </option>
+                                    <option class="text-uppercase" value=" cars"> Cars</option>
+                                    <option class="text-uppercase" value="packages">Package</option>
+                                    <option class="text-uppercase" value="Others ">Others </option>
+                                </select>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="col-lg-5 mb-2">
+                    <div class="bg-secondary d-flex flex-column justify-content-center px-0 px-lg-5   mb-4"
+                        style="height: 435px;">
+                        <div class="d-flex mb-3">
+                            <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-dark">Head Office</h5>
+                                <p>Bimal Mansion,SF-2,Second Floor,8584,Pahar Ganj,Behind,Shiela Cinema,Near St. Anthony
+                                    School,New Delhi-55</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fa fa-2x fas fa-clock text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-dark">Office Timing</h5>
+                                <p>24/7</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-dark">E-mail ID</h5>
+                                <a class="mail_address"
+                                    href="mailto:yashtourandtravels1@gmail.com">yashtourandtravels1@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fa fa-2x fas fa-phone-alt text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-dark">Number</h5>
+                                <a href="https://wa.me/9312288985" target="_blank">+919312288985</a>
+                                <a href="https://wa.me/9773764427" target="_blank">+919773764427</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark py-5 px-sm-3 px-md-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Get In Touch</h4>
+                <h5 class="text-white">Yash Tour & Travels                </h5>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-white mr-3"></i>Bimal Mansion,SF-2,Second
+                    Floor,8584,Pahar Ganj,Behind,Shiela Cinema,Near St. Anthony School,New Delhi-55</p>
+                <p class="mb-2"><i class="fa fa-phone-alt text-white mr-3"></i>+91 9312288985/+919773764427</p>
+                <p><i class="fa fa-envelope text-white mr-3"></i>yashtourandtravels1@gmail.com</p>
+                <h6 class="text-uppercase text-white py-2">Follow Us</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-lg btn-dark btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Usefull Links</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-body mb-2" href="About.html"><i class="fa fa-angle-right text-white mr-2"></i>About
+                        Us</a>
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Privacy
+                        Policy</a>
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Term &
+                        Conditions</a>
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Return &
+                        Refund Policy</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4 "><a href="Gallery.html" class="text-light">Gallery</a></h4>
+                <div class="row mx-n1">
+                    <div class="col-4 px-1 mb-2">
+                        <a href="Gallery.html"><img class="w-100" src="IMG/Tourist Gallery/1.png" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href="Gallery.html"><img class="w-100" src="IMG/Tourist Gallery/2.png" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href="Gallery.html"><img class="w-100" src="IMG/Tourist Gallery/3.png" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="IMG/Tourist Gallery/4.png" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="IMG/Tourist Gallery/5.png" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="IMG/" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Newsletter</h4>
+                <div class="w-100 mb-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-dark border-light" style="padding: 25px;"
+                            placeholder="Your Email">
+                        <div class="input-group-append">
+                            <button onclick="showAlert()"
+                                class="btn btn-primary text-uppercase px-3 mx-1">Sumbit</button>
+                        </div>
+                    </div>
+                </div>
+                <i>Sumbit Your Email ID For Exclusive Updates</i>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark py-4 px-sm-3 px-md-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <p class="mb-2 text-start text-body">&copy; <a href="#" class="text-light">carcoachrentalindia</a>. All
+                    Rights Reserved.</p>
+            </div>
+            <div class="col-lg-4">
+                <p class="m-0 text-end text-body mx-5">Develop & Designed by <a href="https://kanakdrishtiinfo.com/"
+                        class="text-light" target="_blank">KanakDrishti
+                        Infotech</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="lib/easing/easing.min.js"></script> -->
+    <!-- <script src="lib/waypoints/waypoints.min.js"></script> -->
+    <!-- <script src="lib/owlcarousel/owl.carousel.min.js"></script> -->
+    <!-- <script src="lib/tempusdominus/js/moment.min.js"></script> -->
+    <!-- <script src="lib/tempusdominus/js/moment-timezone.min.js"></script> -->
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script> -->
+
+
+    <!-- Template Javascript -->
+    <script src="/js/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="/js/Form.js"></script>
+
+
+    <!-- jQuery & Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 15,
+                // nav: true,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: { items: 1 },
+                    576: { items: 2 },
+                    768: { items: 3 },
+                    992: { items: 4 }
+                }
+            });
+        });
+    </script>
+  <script>
+    $(document).ready(function(){
+        $("#packages-carousel").owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            navText: ['<span class="custom-nav custom-prev">&#10094;</span>', '<span class="custom-nav custom-next">&#10095;</span>'],
+            responsive:{
+                0:{items:1},
+                600:{items:2},
+                1000:{items:3}
+            }
+        });
+    });
+</script>
+
+
+
+
+</body>
+
+</html>

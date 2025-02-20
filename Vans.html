@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarCoachRentalsIndia</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+    <!-- Favicon -->
+    <link href="Favicon/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="/css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
+
+    <style>
+        .vehicle-card {
+            border: 2px solid #007bff;
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 10px;
+            background: #f8f9fa;
+        }
+
+        .vehicle-card img {
+            width: 100%;
+            height: 18rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            .vehicle-card img {
+                height: 12rem;
+            }
+        }
+
+        .sidebar {
+            background: #1c1e32;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 8px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .sidebar a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .enquiry-form {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+
+    <style>
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 800px) {
+            .icon-container {
+                display: flex;
+                justify-content: center;
+                gap: 0px;
+                margin-top: 20px;
+                overflow-x: hidden;
+            }
+
+        }
+
+        .icon-box {
+            width: 30px;
+            height: 30px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            color: #000;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+            background: white;
+        }
+
+        .icon-box:hover {
+            transform: scale(1.1);
+            background-color: #f8f9fa;
+        }
+
+        /* Tooltip Styling */
+        .tooltip-text {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 70px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 12px;
+        }
+
+        .icon-box:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        @media screen {}
+    </style>
+
+
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark py-3 px-lg-5 d-none d-lg-block">
+        <div class="row">
+            <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-body pr-3" href="https://wa.me/9312288985" target="_blank"><i
+                            class="fa fa-phone-alt mr-2"></i>+91
+                        9312288985</a>
+                    <span class="text-body">|</span>
+                    <a class="text-body pr-3 mx-2" href="https://wa.me/9773764427" target="_blank"><i
+                            class="fa fa-phone-alt mr-2"></i>+91
+                        9773764427</a>
+                    <span class="text-body">|</span>
+                    <a class="text-body px-3" href="mailto:yashtourandtravels1@gmail.com"><i
+                            class="fa fa-envelope mr-2"></i>yashtourandtravels1@gmail.com</a>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-body px-3" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-body px-3" href="https://twitter.com/">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-body px-3" href="https://linkedin.com/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-body px-3" href="https://instagram.com/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-body pl-3" href="https://youtube.com/">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0 ">
+        <div class="position-relative px-lg-5" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg  navbar-dark py-3 py-lg-0 pl-3 pl-lg-5 navbar_inner">
+                <a href="/" class="navbar-brand">
+                    <h1 class="text-uppercase text-black  mb-1">Yash Tour & Travels</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="/" class="nav-item nav-link active car-link fw-bolder">Home</a>
+                        <a href="About.html" class="nav-item nav-link active car-link fw-bolder">About</a>
+
+                        <div class="nav-item dropdown">
+                            
+                            <a href="" class="nav-link active dropdown-toggle text-md-white text-sm-white   car-link "
+                                data-toggle="dropdown">Car</a>
+                                
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <!-- <a href="#" class="dropdown-item">Luxury Cars Fleet</a> -->
+                                <a href="BudgetCarsFleet.html" class="dropdown-item">Budget Cars Fleet</a>
+                                <a href="SuvCarsFleet.html" class="dropdown-item">SUV Vehicle Fleet</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="" class="nav-link active dropdown-toggle text-md-white text-sm-white car-link "
+                                data-toggle="dropdown">Minivan</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="" class="dropdown-item">Minivan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="" class="nav-link active dropdown-toggle" data-toggle="dropdown">Tour Packages</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="Tour-Packages.html" class="dropdown-item">Packages</a>
+                        </div>
+                    </div>
+                    <a href="ContactUs.html" class="nav-item nav-link active">Contact Us</a>
+
+                </div>
+        </div>
+        </nav>
+    </div>
+    </div>
+
+    <div class="container ">
+        <nav aria-label="breadcrumb ">
+            <ol class="breadcrumb" style="background-color: white;">
+                <li class="breadcrumb-item"><a class=" " href="/" style="text-decoration: underline;">Home</a></li>
+                <!-- <li class="breadcrumb-item"><a class=" " href="Vans.html" style="text-decoration: underline;">Vans</a></li> -->
+
+                <li class="breadcrumb-item active" aria-current="page">Vans</li>
+            </ol>
+        </nav>
+    </div>
+
+
+
+    <div class="container mt-4">
+        <div class="row">
+
+
+            <div class=" col-sm-12 col-md-12 col-lg-9">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center text-dark">vans</h1>
+                        <p>
+                            CarCoachRental company provide a Imported Luxury VIP vans rental service in Delhi, Mumbai,
+                            Goa, Pune, Chennai, Hyderabad, Kochi, Bengaluru and adjoining cities in India. Rent a super
+                            luxury traveler van that embodies the versatility, innovation and customization that has
+                            become a hallmark in the past decade. The imported VIP van on hire can move groups of 5 to
+                            15 passengers comfortably across long distances and allow people to explore new places
+                            through tourism. Reservation of luxurious vans can be done for Leisure Trips, VIP Meetings &
+                            Conventions, Business & Corporate Travel. Mini Van Hire fleet of imported luxury van
+                            includes Toyota Vellfire. Toyota Alphard, Toyota Hiace, Toyota Commuter, Toyota Coaster,
+                            Force Urbania Minivan, Mercedes V Class, Mercedes Sprinter Van, Hyundai H1, Foton Van, KIA
+                            Carnival Limousine and Force Tempo Traveller. Online Booking of Van is available for Airport
+                            Pick Up and Drop Service, Local Run, City Tour and Outstation Trips
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <a href="Toyota-Vellfire.html" style="text-decoration: none;">
+                            <div class="vehicle-card">
+                                <img src="https://www.minivanhiredelhi.com/uploads/8496_vellfire-toyota%20van.jpg"
+                                    alt="Toyota Vellfire">
+                                <h6>5 Seater Toyota Vellfire</h6>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae similique corrupti
+                                    voluptatem doloremque temporibus quaerat at eaque maiores quibusdam atque fugiat
+                                    quod itaque, ad accusantium.</p>
+                                <div class="container text-center">
+                                    <div class="icon-container">
+                                        <div class="icon-box">
+                                            <i class="bi bi-people"></i>
+                                            <div class="tooltip-text">5+1 Passengres </div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-speedometer2"></i>
+                                            <div class="tooltip-text">120 kmph</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-fuel-pump"></i>
+                                            <div class="tooltip-text">Petrol </div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-suitcase"></i>
+                                            <div class="tooltip-text"> 5 Luggage Space</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-person"></i>
+                                            <div class="tooltip-text">Comfort/Seating Yes</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-tv"></i>
+                                            <div class="tooltip-text">(TV) Available</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-battery-full"></i>
+                                            <div class="tooltip-text">Charging/Battery Available</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-camera-video"></i>
+                                            <div class="tooltip-text">Security/Camera Available</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- view detail button -->
+                                <div class="p-3 rounded-pill mt-4 text-white" style="background-color: #007bff;"> View
+                                    Detail <i class="fa fa-angle-double-right text-black" aria-hidden="true"></i></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="Toyota-Vellfire.html" style="text-decoration: none;">
+                            <div class="vehicle-card">
+                                <img src="https://www.indiancarrental.com/uploads/carrent/27185_1696572580.jpg"
+                                    alt="Mercedes V Class">
+                                <h6>6 Seater Toyota Vellfire</h6>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae similique corrupti
+                                    voluptatem doloremque temporibus quaerat at eaque maiores quibusdam atque fugiat
+                                    quod itaque, ad accusantium.</p>
+
+                                <div class="container text-center">
+                                    <div class="icon-container">
+                                        <div class="icon-box">
+                                            <i class="bi bi-people"></i>
+                                            <div class="tooltip-text">5+1 Passengres </div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-speedometer2"></i>
+                                            <div class="tooltip-text">120 kmph</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-fuel-pump"></i>
+                                            <div class="tooltip-text">Petrol </div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-suitcase"></i>
+                                            <div class="tooltip-text"> 5 Luggage Space</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-person"></i>
+                                            <div class="tooltip-text">Comfort/Seating Yes</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-tv"></i>
+                                            <div class="tooltip-text">(TV) Available</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-battery-full"></i>
+                                            <div class="tooltip-text">Charging/Battery Available</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-camera-video"></i>
+                                            <div class="tooltip-text">Security/Camera Available</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <diV class=" p-3 rounded-pill mt-4 text-white" style="background-color: #007bff;"> View
+                                    Deatil <i class="fa fa-angle-double-right text-black" aria-hidden="true"></i></diV>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="Toyota-Vellfire.html" style="text-decoration: none;">
+                            <div class="vehicle-card">
+                                <img src="https://www.minivanhiredelhi.com/uploads/7061_Toyota%20Vellfire%20On%20Rent.PNG"
+                                    alt="Mercedes V Class">
+                                <h6>7 Seater Toyota Vellfire</h6>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae similique corrupti
+                                    voluptatem doloremque temporibus quaerat at eaque maiores quibusdam atque fugiat
+                                    quod itaque, ad accusantium.</p>
+                                <div class="container text-center">
+                                    <div class="icon-container">
+                                        <div class="icon-box">
+                                            <i class="bi bi-people"></i>
+                                            <div class="tooltip-text">5+1 Passengres </div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-speedometer2"></i>
+                                            <div class="tooltip-text">120 kmph</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-fuel-pump"></i>
+                                            <div class="tooltip-text">Petrol </div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-suitcase"></i>
+                                            <div class="tooltip-text"> 5 Luggage Space</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-person"></i>
+                                            <div class="tooltip-text">Comfort/Seating Yes</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-tv"></i>
+                                            <div class="tooltip-text">(TV) Available</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-battery-full"></i>
+                                            <div class="tooltip-text">Charging/Battery Available</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-camera-video"></i>
+                                            <div class="tooltip-text">Security/Camera Available</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <diV class=" p-3 rounded-pill mt-4 text-white" style="background-color: #007bff;"> View
+                                    Deatil <i class="fa fa-angle-double-right text-black" aria-hidden="true"></i></diV>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+
+                    <div class="col-md-6">
+                        <a href="Toyota-Vellfire.html" style="text-decoration: none;">
+                            <div class="vehicle-card">
+                                <img src="IMG/Page-Caraousel/ERTIGA/1.jpg" alt="Toyota Hiace">
+                                <h6>8 Seater Toyota Vellfire</h6>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae similique corrupti
+                                    voluptatem doloremque temporibus quaerat at eaque maiores quibusdam atque fugiat
+                                    quod itaque, ad accusantium.</p>
+                                <div class="container text-center">
+                                    <div class="icon-container">
+                                        <div class="icon-box">
+                                            <i class="bi bi-people"></i>
+                                            <div class="tooltip-text">5+1 Passengres </div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-speedometer2"></i>
+                                            <div class="tooltip-text">120 kmph</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-fuel-pump"></i>
+                                            <div class="tooltip-text">Petrol </div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-suitcase"></i>
+                                            <div class="tooltip-text"> 5 Luggage Space</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-person"></i>
+                                            <div class="tooltip-text">Comfort/Seating Yes</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-tv"></i>
+                                            <div class="tooltip-text">(TV) Available</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-battery-full"></i>
+                                            <div class="tooltip-text">Charging/Battery Available</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-camera-video"></i>
+                                            <div class="tooltip-text">Security/Camera Available</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <diV class=" p-3 rounded-pill mt-4 text-white" style="background-color: #007bff;"> View
+                                    Deatil <i class="fa fa-angle-double-right text-black" aria-hidden="true"></i></diV>
+
+
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="Toyota-Vellfire.html" style="text-decoration: none;">
+                            <div class="vehicle-card">
+                                <img src="IMG/Page-Caraousel/INNOVA/1.png" alt="Mercedes Sprinter">
+                                <h6>Toyota innova Crysta</h6>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae similique corrupti
+                                    voluptatem doloremque temporibus quaerat at eaque maiores quibusdam atque fugiat
+                                    quod itaque, ad accusantium.</p>
+                                <div class="container text-center">
+                                    <div class="icon-container">
+                                        <div class="icon-box">
+                                            <i class="bi bi-people"></i>
+                                            <div class="tooltip-text">5+1 Passengres </div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-speedometer2"></i>
+                                            <div class="tooltip-text">120 kmph</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-fuel-pump"></i>
+                                            <div class="tooltip-text">Petrol </div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-suitcase"></i>
+                                            <div class="tooltip-text"> 5 Luggage Space</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-person"></i>
+                                            <div class="tooltip-text">Comfort/Seating Yes</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-tv"></i>
+                                            <div class="tooltip-text">(TV) Available</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-battery-full"></i>
+                                            <div class="tooltip-text">Charging/Battery Available</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-camera-video"></i>
+                                            <div class="tooltip-text">Security/Camera Available</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- view detail button -->
+                                <diV class=" p-3 rounded-pill mt-4 text-white" style="background-color: #007bff;"> View
+                                    Deatil <i class="fa fa-angle-double-right text-black" aria-hidden="true"></i></diV>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Inquiry Form -->
+            <div class="col-lg-3 col-md-12 col-sm-12">
+                <div class="enquiry-form">
+                    <h5>Quick Enquiry</h5>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Country/City">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control">
+                                <option>Vehicle Required</option>
+                                <option>Toyota Vellfire</option>
+                                <option>Mercedes V Class</option>
+                                <option>Kia Carnival</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" placeholder="No. of Adults">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" placeholder="No. of Children">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Requirements"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter Code">
+                        </div>
+                        <button class="btn btn-primary btn-block">Submit Now</button>
+                    </form>
+                    <div class=" mt-5 d-none d-lg-block ">
+                        <div class="sidebar">
+                            <h5 class="">Vehicle Categories</h5>
+                            <a href="Maruti-Swift-Dzire.html">Maruti-Swift-Dzire</a>
+                            <a href="Maruti-Eeco.html">Maruti Eeco</a>
+                            <a href="Toyota-Etios.html">Toyota Etios</a>
+                            <a href="Maruti-Ertiga.html">Maruti Ertiga</a>
+                            <a href="Toyota-innova-crysta.html">Toyota innova Crysta</a>
+                            <a href="#">Toyota Commuter</a>
+                            <a href="#">Toyota Alphard</a>
+                            <a href="#">Toyota Coaster</a>
+                            <a href="#">Tempo Traveller</a>
+                            <a href="#">Volkswagen Crafter</a>
+                            <a href="#">Force Urbania</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark py-5 px-sm-3 px-md-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Get In Touch</h4>
+                <h5 class="text-white">Yash Tour & Travels                </h5>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-white mr-3"></i>Bimal Mansion,SF-2,Second
+                    Floor,8584,Pahar Ganj,Behind,Shiela Cinema,Near St. Anthony School,New Delhi-55</p>
+ 
+                <p class="mb-2"><i class="fa fa-phone-alt text-white mr-3"></i>+91 9312288985/+919773764427</p>
+                <p><i class="fa fa-envelope text-white mr-3"></i>yashtourandtravels1@gmail.com</p>
+                <h6 class="text-uppercase text-white py-2">Follow Us</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-lg btn-dark btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Usefull Links</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-body mb-2" href="About.html"><i class="fa fa-angle-right text-white mr-2"></i>About
+                        Us</a>
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Privacy
+                        Policy</a>
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Term &
+                        Conditions</a>
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Return &
+                        Refund Policy</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4 "><a href="Gallery.html" class="text-light">Gallery</a></h4>
+                <div class="row mx-n1">
+                    <div class="col-4 px-1 mb-2">
+                        <a href="Gallery.html"><img class="w-100" src="IMG/Tourist Gallery/1.png" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href="Gallery.html"><img class="w-100" src="IMG/Tourist Gallery/2.png" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href="Gallery.html"><img class="w-100" src="IMG/Tourist Gallery/3.png" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="IMG/Tourist Gallery/4.png" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="IMG/Tourist Gallery/5.png" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="IMG/" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Newsletter</h4>
+                <div class="w-100 mb-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-dark border-light" style="padding: 25px;"
+                            placeholder="Your Email">
+                        <div class="input-group-append">
+                            <button onclick="showAlert()"
+                                class="btn btn-primary text-uppercase px-3 mx-1">Sumbit</button>
+                        </div>
+                    </div>
+                </div>
+                <i>Sumbit Your Email ID For Exclusive Updates</i>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark py-4 px-sm-3 px-md-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <p class="mb-2 text-start text-body">&copy; <a href="#" class="text-light">carcoachrentalindia</a>. All
+                    Rights Reserved.</p>
+            </div>
+            <div class="col-lg-4">
+                <p class="m-0 text-end text-body mx-5">Develop & Designed by <a
+                        href="https://www.kanakdrishtiinfotec.in/" class="text-light" target="_blank">KanakDrishti
+                        Infotech</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="js/Script.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>

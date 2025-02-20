@@ -1,0 +1,499 @@
+.kianur_main_div {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .kinaur_div_one {
+    width: 65%;
+  }
+  
+  .kinaur_div_two {
+    width: 30%;
+    padding: 20px;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .fa-cloud-sun {
+    color: skyblue;
+  }
+  
+  .kinaur_div_one h6 {
+    line-height: 1.5rem;
+  }
+  
+  .kinaur_div_one_div img {
+    height: 50%;
+    width: 40%;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+  }
+  
+  .kinnaur_bg {
+    background: #f7f7f7;
+    height: 3rem;
+    padding-top: 0.6rem;
+    /* padding-left: 1rem; */
+    margin-bottom: 2rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 4px;
+  }
+  
+
+
+
+  @media only screen and (max-width: 600px) {
+    .kianur_main_div {
+        display: block;
+        gap: 20px;
+      }
+
+      .kinaur_div_one {
+        width: 100%;
+      }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .kinaur_div_two {
+        width: 100%;
+    }
+}
+
+
+/* .fa-bowl-food,.fa-bed{
+    font-size: 1.7rem;
+}
+.bi-bus-front{
+    font-size: 1.7rem;
+} */
+
+
+.kinaur_div_two{
+  position: sticky;
+  top: 3rem;
+}
+
+
+
+.bg {
+    height: 30rem;
+    width: 100%;
+    background-image: url("/IMG/Cards/delhi\ jaipur\ agra.webp");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; /* Center the image */
+    margin-bottom: 2rem;
+   
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .bg {
+        height: 25rem;
+        background-attachment: scroll; /* Allow the image to scroll on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .bg {
+        height: 20rem;
+        background-attachment: scroll;
+        background-size: cover; /* Adjust the background size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .bg {
+        height: 15rem;
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: top; /* Align the background image to the top */
+    }
+}
+
+
+.bg h1{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 15%;
+}
+
+
+@media screen and (max-width: 650px) {
+    .bg h1{
+        color: white;
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 20%;
+    }
+    }
+
+.bg {
+    height: 30rem;
+    width: 100%;
+    background-image: url("/IMG/Cards/delhi\ jaipur\ agra.webp");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; /* Center the image */
+    margin-bottom: 2rem;
+   
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .bg {
+        height: 25rem;
+        background-attachment: scroll; /* Allow the image to scroll on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .bg {
+        height: 20rem;
+        background-attachment: scroll;
+        background-size: cover; /* Adjust the background size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .bg {
+        height: 15rem;
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: top; /* Align the background image to the top */
+    }
+}
+
+
+.bg h1{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 15%;
+}
+
+
+@media screen and (max-width: 650px) {
+    .bg h1{
+        color: white;
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 20%;
+    }
+    }
+
+
+/* ---------------------------------------------------------------------------------- */
+
+.bg1 {
+  height: 30rem;
+  width: 100%;
+  background-image: url("/IMG/Cards/2-days-delhi-agra-tour-package.webp");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; /* Center the image */
+  margin-bottom: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .bg1 {
+      height: 25rem;
+      background-attachment: scroll; /* Allow the image to scroll on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .bg1 {
+      height: 20rem;
+      background-attachment: scroll;
+      background-size: cover; /* Adjust the background size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .bg1 {
+      height: 15rem;
+      background-attachment: scroll;
+      background-size: cover;
+      background-position: top; /* Align the background image to the top */
+  }
+}
+
+.bg1 h1 {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 15%;
+}
+
+@media screen and (max-width: 650px) {
+  .bg1 h1 {
+      color: white;
+      font-size: 2.5rem;
+      text-align: center;
+      padding-top: 20%;
+  }
+}
+
+
+
+
+
+/*--------------------------------------------------  */
+
+
+.bg2 {
+  height: 30rem;
+  width: 100%;
+  background-image: url("/IMG/Cards/Rajasthan-11.webp");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; /* Center the image */
+  margin-bottom: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .bg2 {
+      height: 25rem;
+      background-attachment: scroll; /* Allow the image to scroll on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .bg2 {
+      height: 20rem;
+      background-attachment: scroll;
+      background-size: cover; /* Adjust the background size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .bg2 {
+      height: 15rem;
+      background-attachment: scroll;
+      background-size: cover;
+      background-position: top; /* Align the background image to the top */
+  }
+}
+
+.bg2 h1 {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 15%;
+}
+
+@media screen and (max-width: 650px) {
+  .bg2 h1 {
+      color: white;
+      font-size: 2.5rem;
+      text-align: center;
+      padding-top: 20%;
+  }
+}
+
+
+
+
+
+
+
+    /* QueryForm.css */
+
+.form_container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-bottom: 5rem;
+  }
+  
+  .form-container,
+  .other-content {
+    width: 48%;
+  }
+  
+  .form-container {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: rgb(5,146,148);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .other-content {
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 18px;
+    background-color: #f4f4f4;
+    color: #555;
+  }
+  
+  .other_content_h1 {
+    margin-top: 5rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bolder;
+  }
+  
+  .other_content_h3 {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  
+  ul_form{
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+  }
+  
+  /* li {
+    margin-bottom: 15px;
+  }
+  
+  li i {
+    margin-right: 10px;
+  } */
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .form-container,
+    .other-content {
+      width: 100%;
+    }
+  
+    .other_content_h1,
+    .other_content_h3 {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  
+    .form_container {
+      flex-direction: column; /* Stack the content vertically on small screens */
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-container,
+    .other-content {
+      padding: 15px;
+    }
+  
+    button[type="submit"] {
+      font-size: 16px;
+    }
+  
+    .other_content_h1 {
+      font-size: 24px;
+    }
+  
+    .other_content_h3 {
+      font-size: 16px;
+    }
+  }
+  
+  
+  
+  .icon_query{
+      color: #007bff;
+  }
+  
+  
+  .ul_form{
+    margin-left: 20%;
+  }
+
+
+  .kinaur_div_one_div img {
+    height: auto;       /* Maintain the aspect ratio */
+    max-height: 15rem;  /* Limit the maximum height */
+    margin-bottom: 3rem;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .kinaur_div_one_div img {
+      width: 40vw;
+      height: 8rem;       /* Maintain the aspect ratio */
+      max-height: 15rem;  /* Limit the maximum height */
+      margin-bottom: 3rem;
+    }
+   
+  }
